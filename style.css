@@ -1,0 +1,1124 @@
+/* =========================================
+   DAYANN BOUTIQUE
+   COLORES PRINCIPALES
+========================================= */
+
+:root {
+
+    --black: #11100e;
+
+    --black-soft: #1c1a17;
+
+    --beige: #e6d8c3;
+
+    --beige-light: #f6f0e7;
+
+    --beige-dark: #cbb99e;
+
+    --white: #ffffff;
+
+    --gray: #77716a;
+
+}
+
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--beige-light);
+
+    color: var(--black);
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(246, 240, 231, 0.96);
+
+    border-bottom: 1px solid rgba(17, 16, 14, 0.08);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.navbar {
+
+    max-width: 1200px;
+
+    height: 85px;
+
+    margin: auto;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    line-height: 20px;
+
+    text-align: center;
+
+}
+
+.logo span {
+
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+    margin-top: 5px;
+
+}
+
+
+/* MENÚ */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+
+}
+
+.nav-links a:hover {
+
+    color: #8a7760;
+
+}
+
+
+/* BOTÓN MENÚ MÓVIL */
+
+.menu-button {
+
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--black);
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    padding: 120px 20px 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+
+        linear-gradient(
+            rgba(17, 16, 14, 0.55),
+            rgba(17, 16, 14, 0.55)
+        ),
+
+        linear-gradient(
+            135deg,
+            #d8c9b0 0%,
+            #1c1a17 100%
+        );
+
+}
+
+
+.hero-content {
+
+    max-width: 850px;
+
+}
+
+
+.subtitle {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(65px, 11vw, 135px);
+
+    line-height: 0.85;
+
+    letter-spacing: 5px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    margin-top: 20px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(15px, 2vw, 24px);
+
+    font-weight: 400;
+
+    letter-spacing: 15px;
+
+}
+
+
+.hero-description {
+
+    max-width: 550px;
+
+    margin: 35px auto;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.main-button {
+
+    display: inline-block;
+
+    padding: 16px 38px;
+
+    background: var(--beige-light);
+
+    color: var(--black);
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+
+}
+
+.main-button:hover {
+
+    background: var(--black);
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-title p {
+
+    color: #887660;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+.section-title h2 {
+
+    font-size: 48px;
+
+}
+
+
+/* =========================================
+   COLECCIÓN
+========================================= */
+
+.collection {
+
+    padding: 120px 7%;
+
+    background: var(--beige-light);
+
+}
+
+
+.products {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* PRODUCTO */
+
+.product {
+
+    background: var(--white);
+
+    transition: 0.3s;
+
+    overflow: hidden;
+
+}
+
+.product:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(17, 16, 14, 0.12);
+
+}
+
+
+/* =========================================
+   IMÁGENES DE LOS PRODUCTOS
+========================================= */
+
+/*
+   IMPORTANTE:
+
+   NO ponemos filtros beige o negros aquí.
+   Las fotografías mantienen sus colores originales.
+*/
+
+.product-image {
+
+    width: 100%;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    background: #eee8de;
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.product:hover .product-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* INFORMACIÓN */
+
+.product-info {
+
+    padding: 22px;
+
+}
+
+.product-info h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+
+}
+
+.product-info p {
+
+    color: var(--gray);
+
+    font-size: 11px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* PRECIO + BOTÓN */
+
+.product-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+}
+
+
+.price {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.buy-button {
+
+    border: none;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    padding: 11px 17px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.buy-button:hover {
+
+    background: #776753;
+
+}
+
+
+/* =========================================
+   SOBRE NOSOTROS
+========================================= */
+
+.about {
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.about-content {
+
+    padding: 100px 13%;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    background: var(--beige);
+
+}
+
+
+.dark-text {
+
+    color: #655846 !important;
+
+}
+
+
+.about-content h2 {
+
+    font-size: 65px;
+
+    line-height: 0.95;
+
+    margin-bottom: 35px;
+
+}
+
+
+.about-content p:not(.subtitle) {
+
+    max-width: 500px;
+
+    color: #514a41;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    margin-bottom: 10px;
+
+}
+
+
+.dark-button {
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 16px 30px;
+
+    background: var(--black);
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+
+}
+
+
+.dark-button:hover {
+
+    background: #756451;
+
+}
+
+
+/* FOTO DECORATIVA */
+
+.about-photo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            rgba(17,16,14,0.25),
+            rgba(17,16,14,0.25)
+        ),
+
+        linear-gradient(
+            135deg,
+            #d0bea2,
+            #161513
+        );
+
+}
+
+
+.about-photo span {
+
+    display: block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 70px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.about-photo small {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    letter-spacing: 8px;
+
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contact {
+
+    padding: 120px 7%;
+
+    background: var(--beige-light);
+
+}
+
+
+.contact-container {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+}
+
+
+.contact-info h3 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact-info > p {
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact-item strong {
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.contact-item span {
+
+    color: var(--gray);
+
+    font-size: 12px;
+
+}
+
+
+/* REDES */
+
+.social-links {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+}
+
+
+.social-links a {
+
+    font-size: 11px;
+
+    border-bottom: 1px solid var(--black);
+
+    padding-bottom: 5px;
+
+}
+
+
+/* FORMULARIO */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #d1c4b1;
+
+    outline: none;
+
+    background: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: var(--black);
+
+}
+
+
+.contact-form textarea {
+
+    height: 150px;
+
+    resize: none;
+
+}
+
+
+.contact-form button {
+
+    padding: 16px;
+
+    border: none;
+
+    background: var(--black);
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-form button:hover {
+
+    background: #756451;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 50px 20px;
+
+    background: var(--black);
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.footer-logo {
+
+    display: inline-block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.footer-logo span {
+
+    display: block;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+}
+
+
+footer p {
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .products {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .about-content {
+
+        padding: 80px 8%;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: 75px;
+
+        padding: 0 20px;
+
+    }
+
+
+    .menu-button {
+
+        display: block;
+
+    }
+
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        background: var(--beige-light);
+
+        border-top: 1px solid #ddd;
+
+    }
+
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+
+    .nav-links li {
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 18px;
+
+        border-bottom: 1px solid #e1d8ca;
+
+    }
+
+
+    .hero {
+
+        min-height: 90vh;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+
+    }
+
+
+    .hero h1 span {
+
+        font-size: 13px;
+
+        letter-spacing: 8px;
+
+    }
+
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .collection {
+
+        padding: 90px 6%;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    .about {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-content {
+
+        padding: 80px 8%;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 50px;
+
+    }
+
+
+    .about-photo {
+
+        min-height: 400px;
+
+    }
+
+
+    .about-photo span {
+
+        font-size: 45px;
+
+    }
+
+
+    .contact {
+
+        padding: 90px 6%;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+
+        font-size: 52px;
+
+    }
+
+
+    .hero h1 span {
+
+        letter-spacing: 5px;
+
+    }
+
+
+    .product-bottom {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .price {
+
+        text-align: center;
+
+    }
+
+}

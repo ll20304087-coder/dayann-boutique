@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DAYANN BOUTIQUE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                DAYANN
+                <span>BOUTIQUE</span>
+            </a>
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#coleccion">Colección</a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    ELEGANCIA · ESTILO · FEMINIDAD
+                </p>
+
+                <h1>
+                    DAYANN
+                    <span>BOUTIQUE</span>
+                </h1>
+
+                <p class="hero-description">
+                    Descubre nuestra colección y encuentra
+                    prendas que representen tu estilo.
+                </p>
+
+                <a href="#coleccion" class="main-button">
+                    VER COLECCIÓN
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLECCIÓN ================= -->
+
+        <section class="collection" id="coleccion">
+
+            <div class="section-title">
+
+                <p>
+                    NUEVA COLECCIÓN
+                </p>
+
+                <h2>
+                    Nuestros favoritos
+                </h2>
+
+            </div>
+
+
+            <div class="products">
+
+                <!-- PRODUCTO 1 -->
+
+                <article class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="imagenes/vestido.jpg"
+                            alt="Vestido elegante"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Vestido Elegance
+                        </h3>
+
+                        <p>
+                            Vestido para cualquier ocasión
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                Q350.00
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                onclick="comprar('Vestido Elegance')"
+                            >
+                                COMPRAR
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="imagenes/blusa.jpg"
+                            alt="Blusa elegante"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Blusa Classic
+                        </h3>
+
+                        <p>
+                            Blusa moderna y elegante
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                Q225.00
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                onclick="comprar('Blusa Classic')"
+                            >
+                                COMPRAR
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="imagenes/conjunto.jpg"
+                            alt="Conjunto de ropa"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Set Luxury
+                        </h3>
+
+                        <p>
+                            Conjunto moderno
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                Q425.00
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                onclick="comprar('Set Luxury')"
+                            >
+                                COMPRAR
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="imagenes/bolso.jpg"
+                            alt="Bolso de moda"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Classic Bag
+                        </h3>
+
+                        <p>
+                            Bolso para complementar tu look
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                Q300.00
+                            </span>
+
+                            <button
+                                class="buy-button"
+                                onclick="comprar('Classic Bag')"
+                            >
+                                COMPRAR
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section class="about" id="nosotros">
+
+            <div class="about-content">
+
+                <p class="subtitle dark-text">
+                    SOBRE DAYANN BOUTIQUE
+                </p>
+
+                <h2>
+                    Tu estilo.
+                    <br>
+                    Tu esencia.
+                </h2>
+
+                <p>
+                    En <strong>DAYANN BOUTIQUE</strong> creemos que
+                    la moda es una forma de expresar quién eres.
+                </p>
+
+                <p>
+                    Seleccionamos cada pieza pensando en mujeres
+                    que quieren sentirse elegantes, seguras y
+                    auténticas.
+                </p>
+
+                <a href="#contacto" class="dark-button">
+                    CONÓCENOS
+                </a>
+
+            </div>
+
+
+            <div class="about-photo">
+
+                <div>
+                    <span>DAYANN</span>
+                    <small>BOUTIQUE</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="contact" id="contacto">
+
+            <div class="section-title">
+
+                <p>
+                    ¿TIENES ALGUNA PREGUNTA?
+                </p>
+
+                <h2>
+                    Contáctanos
+                </h2>
+
+            </div>
+
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>
+                        DAYANN BOUTIQUE
+                    </h3>
+
+                    <p>
+                        Estamos aquí para ayudarte a encontrar
+                        tu próximo look favorito.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>📍 Ubicación</strong>
+                        <span>Guatemala</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📞 Teléfono</strong>
+                        <span>+502 5982-4462</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>✉️ Correo</strong>
+                        <span>dayannboutique@gmail.com</span>
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            Instagram
+                        </a>
+
+                        <a href="#">
+                            Facebook
+                        </a>
+
+                        <a href="#">
+                            TikTok
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form id="contactForm" class="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Tu nombre"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Tu correo electrónico"
+                        required
+                    >
+
+                    <textarea
+                        placeholder="Escribe tu mensaje..."
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        ENVIAR MENSAJE
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <a href="#inicio" class="footer-logo">
+            DAYANN
+            <span>BOUTIQUE</span>
+        </a>
+
+        <p>
+            © 2026 DAYANN BOUTIQUE
+        </p>
+
+        <p>
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
