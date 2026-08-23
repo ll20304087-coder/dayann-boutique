@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DAYANN BOUTIQUE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <a href="#inicio" class="logo">
+        DAYANN
+        <span>BOUTIQUE</span>
+    </a>
+
+
+    <nav class="nav">
+
+        <a href="#inicio">
+            INICIO
+        </a>
+
+        <a href="#coleccion">
+            COLECCIÓN
+        </a>
+
+        <a href="#nosotros">
+            NOSOTROS
+        </a>
+
+        <a href="#contacto">
+            CONTACTO
+        </a>
+
+    </nav>
+
+
+    <button
+        class="cart-button"
+        onclick="abrirCarrito()"
+    >
+
+        🛒
+
+        <span id="cart-count">
+            0
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            BIENVENIDA A
+        </p>
+
+
+        <h1>
+
+            DAYANN
+
+            <span>
+                BOUTIQUE
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+            Moda elegante para mujeres y hombres.
+        </p>
+
+
+        <a
+            href="#coleccion"
+            class="hero-button"
+        >
+            VER COLECCIÓN
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     COLECCIÓN
+========================= -->
+
+<section
+    class="collection"
+    id="coleccion"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            NUESTRA TIENDA
+        </p>
+
+        <h2>
+            NUEVA COLECCIÓN
+        </h2>
+
+        <div class="line"></div>
+
+    </div>
+
+
+
+    <!-- CATEGORÍAS -->
+
+    <div class="category-buttons">
+
+        <button
+            class="category-button active"
+            onclick="mostrarCategoria('mujeres', this)"
+        >
+            MUJERES
+        </button>
+
+
+        <button
+            class="category-button"
+            onclick="mostrarCategoria('hombres', this)"
+        >
+            HOMBRES
+        </button>
+
+    </div>
+
+
+
+    <!-- PRODUCTOS -->
+
+    <div class="products">
+
+
+        <!-- =================
+             MUJER
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="mujeres"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Vestido Elegance',
+                    350,
+                    'Vestido elegante para cualquier ocasión.',
+                    'Beige',
+                    'imagenes/vestido.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/vestido.jpeg"
+                    alt="Vestido Elegance"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    MUJER
+                </p>
+
+
+                <h3>
+                    Vestido Elegance
+                </h3>
+
+
+                <p class="product-description">
+                    Vestido elegante para cualquier ocasión.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q350.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Vestido Elegance',
+                            350,
+                            'Vestido elegante para cualquier ocasión.',
+                            'Beige',
+                            'imagenes/vestido.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================
+             MUJER
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="mujeres"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Blusa Classic',
+                    220,
+                    'Blusa elegante y cómoda.',
+                    'Negro',
+                    'imagenes/blusa.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/blusa.jpeg"
+                    alt="Blusa Classic"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    MUJER
+                </p>
+
+
+                <h3>
+                    Blusa Classic
+                </h3>
+
+
+                <p class="product-description">
+                    Blusa elegante y cómoda.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q220.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Blusa Classic',
+                            220,
+                            'Blusa elegante y cómoda.',
+                            'Negro',
+                            'imagenes/blusa.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================
+             MUJER
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="mujeres"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Conjunto Luxury',
+                    450,
+                    'Conjunto moderno y elegante.',
+                    'Beige',
+                    'imagenes/conjunto.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/conjunto.jpeg"
+                    alt="Conjunto Luxury"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    MUJER
+                </p>
+
+
+                <h3>
+                    Conjunto Luxury
+                </h3>
+
+
+                <p class="product-description">
+                    Conjunto moderno y elegante.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q450.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Conjunto Luxury',
+                            450,
+                            'Conjunto moderno y elegante.',
+                            'Beige',
+                            'imagenes/conjunto.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================
+             HOMBRE
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="hombres"
+            style="display:none;"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Camisa Classic',
+                    280,
+                    'Camisa elegante para hombre.',
+                    'Negro',
+                    'imagenes/camisa.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/camisa.jpeg"
+                    alt="Camisa Classic"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    HOMBRE
+                </p>
+
+
+                <h3>
+                    Camisa Classic
+                </h3>
+
+
+                <p class="product-description">
+                    Camisa elegante para hombre.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q280.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Camisa Classic',
+                            280,
+                            'Camisa elegante para hombre.',
+                            'Negro',
+                            'imagenes/camisa.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================
+             HOMBRE
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="hombres"
+            style="display:none;"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Pantalón Executive',
+                    320,
+                    'Pantalón moderno y cómodo.',
+                    'Beige',
+                    'imagenes/pantalon.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/pantalon.jpeg"
+                    alt="Pantalón Executive"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    HOMBRE
+                </p>
+
+
+                <h3>
+                    Pantalón Executive
+                </h3>
+
+
+                <p class="product-description">
+                    Pantalón moderno y cómodo.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q320.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Pantalón Executive',
+                            320,
+                            'Pantalón moderno y cómodo.',
+                            'Beige',
+                            'imagenes/pantalon.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================
+             HOMBRE
+        ================= -->
+
+        <article
+            class="product"
+            data-categoria="hombres"
+            style="display:none;"
+        >
+
+            <div
+                class="product-image"
+                onclick="abrirProducto(
+                    'Set Gentleman',
+                    480,
+                    'Conjunto elegante para hombre.',
+                    'Negro',
+                    'imagenes/set-hombre.jpeg'
+                )"
+            >
+
+                <img
+                    src="imagenes/set-hombre.jpeg"
+                    alt="Set Gentleman"
+                >
+
+
+                <div class="view-product">
+                    VER PRODUCTO
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    HOMBRE
+                </p>
+
+
+                <h3>
+                    Set Gentleman
+                </h3>
+
+
+                <p class="product-description">
+                    Conjunto elegante para hombre.
+                </p>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Q480.00
+                    </strong>
+
+
+                    <button
+                        onclick="abrirProducto(
+                            'Set Gentleman',
+                            480,
+                            'Conjunto elegante para hombre.',
+                            'Negro',
+                            'imagenes/set-hombre.jpeg'
+                        )"
+                    >
+                        VER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     NOSOTROS
+========================= -->
+
+<section
+    class="about"
+    id="nosotros"
+>
+
+    <div class="about-content">
+
+        <p class="section-small">
+            CONÓCENOS
+        </p>
+
+
+        <h2>
+            DAYANN BOUTIQUE
+        </h2>
+
+
+        <p>
+            Moda elegante para mujeres y hombres.
+        </p>
+
+
+        <p>
+            Encuentra prendas que representen
+            tu estilo y personalidad.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section
+    class="contact"
+    id="contacto"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            SÍGUENOS
+        </p>
+
+
+        <h2>
+            CONTACTO
+        </h2>
+
+
+        <div class="line"></div>
+
+    </div>
+
+
+
+    <div class="social-links">
+
+
+        <a
+            href="https://www.instagram.com/"
+            target="_blank"
+        >
+            INSTAGRAM
+        </a>
+
+
+        <a
+            href="https://www.facebook.com/"
+            target="_blank"
+        >
+            FACEBOOK
+        </a>
+
+
+        <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+        >
+            TIKTOK
+        </a>
+
+
+        <a
+            href="https://wa.me/50259824462"
+            target="_blank"
+        >
+            WHATSAPP
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="logo">
+
+        DAYANN
+
+        <span>
+            BOUTIQUE
+        </span>
+
+    </div>
+
+
+    <p>
+        © 2026 DAYANN BOUTIQUE
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     MODAL PRODUCTO
+========================= -->
+
+<div
+    class="modal"
+    id="productModal"
+>
+
+    <div class="modal-content">
+
+
+        <button
+            class="close-modal"
+            onclick="cerrarProducto()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-image">
+
+            <img
+                id="modalProductImage"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+
+
+        <div class="modal-info">
+
+
+            <p class="product-category">
+                DAYANN BOUTIQUE
+            </p>
+
+
+            <h2 id="modalProductName">
+                Producto
+            </h2>
+
+
+            <div
+                class="modal-price"
+                id="modalProductPrice"
+            >
+                Q0.00
+            </div>
+
+
+            <p
+                class="modal-description"
+                id="modalProductDescription"
+            ></p>
+
+
+            <p class="modal-color">
+
+                Color:
+
+                <strong
+                    id="modalProductColor"
+                ></strong>
+
+            </p>
+
+
+
+            <!-- TALLAS -->
+
+            <div class="sizes">
+
+                <p>
+                    ELIGE TU TALLA
+                </p>
+
+
+                <div class="size-buttons">
+
+                    <button
+                        class="size-button"
+                        onclick="seleccionarTalla(this)"
+                    >
+                        XS
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        onclick="seleccionarTalla(this)"
+                    >
+                        S
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        onclick="seleccionarTalla(this)"
+                    >
+                        M
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        onclick="seleccionarTalla(this)"
+                    >
+                        L
+                    </button>
+
+
+                    <button
+                        class="size-button"
+                        onclick="seleccionarTalla(this)"
+                    >
+                        XL
+                    </button>
+
+                </div>
+
+
+                <p class="size-message">
+                    Selecciona una talla.
+                </p>
+
+            </div>
+
+
+
+            <!-- CANTIDAD -->
+
+            <div class="quantity">
+
+                <p>
+                    CANTIDAD
+                </p>
+
+
+                <div class="quantity-controls">
+
+                    <button
+                        onclick="cambiarCantidad(-1)"
+                    >
+                        −
+                    </button>
+
+
+                    <span id="productQuantity">
+                        1
+                    </span>
+
+
+                    <button
+                        onclick="cambiarCantidad(1)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <button
+                class="add-cart-button"
+                onclick="agregarProductoDesdeModal()"
+            >
+                AGREGAR AL CARRITO
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     CARRITO
+========================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+    <div class="cart">
+
+
+        <button
+            class="close-cart"
+            onclick="cerrarCarrito()"
+        >
+            ×
+        </button>
+
+
+
+        <div class="cart-header">
+
+            <p>
+                DAYANN BOUTIQUE
+            </p>
+
+
+            <h2>
+                MI CARRITO
+            </h2>
+
+        </div>
+
+
+
+        <div
+            id="cart-items"
+            class="cart-items"
+        >
+
+            <p class="empty-cart">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+
+        <div class="cart-footer">
+
+
+            <div class="cart-total">
+
+                <span>
+                    TOTAL
+                </span>
+
+
+                <strong id="cart-total">
+                    Q0.00
+                </strong>
+
+            </div>
+
+
+
+            <!-- =================
+                 FORMA DE PAGO
+            ================= -->
+
+            <div class="payment-method">
+
+                <p>
+                    FORMA DE PAGO
+                </p>
+
+
+                <select id="paymentMethod">
+
+                    <option value="">
+                        Selecciona una forma de pago
+                    </option>
+
+
+                    <option value="Efectivo">
+                        💵 Efectivo
+                    </option>
+
+
+                    <option value="Transferencia bancaria">
+                        🏦 Transferencia bancaria
+                    </option>
+
+
+                    <option value="Pago por WhatsApp">
+                        📱 Pago por WhatsApp
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <button
+                class="whatsapp-button"
+                onclick="comprarCarrito()"
+            >
+                CONFIRMAR PEDIDO POR WHATSAPP
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
