@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DAYANN BOUTIQUE | Moda con estilo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <div class="top-bar">
+        ENVÍOS A TODO GUATEMALA • COMPRA FÁCIL Y SEGURA
+    </div>
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#inicio" class="logo">
+                DAYANN <span>BOUTIQUE</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#productos">Colección</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="icon-btn" id="searchBtn" title="Buscar">
+                    🔍
+                </button>
+
+                <button class="icon-btn" id="favoriteBtn" title="Favoritos">
+                    ♡
+                    <span class="counter" id="favoriteCounter">0</span>
+                </button>
+
+                <button class="icon-btn" id="cartBtn" title="Carrito">
+                    🛒
+                    <span class="counter" id="cartCounter">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#productos">Colección</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+    </header>
+
+    <div class="search-container" id="searchContainer">
+
+        <div class="container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar vestidos, camisas, pantalones..."
+            >
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    NUEVA COLECCIÓN 2026
+                </p>
+
+                <h1>
+                    Elegancia que<br>
+                    habla por ti.
+                </h1>
+
+                <p class="hero-description">
+                    Moda para mujer y hombre, cuidadosamente seleccionada
+                    para crear un estilo único.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#productos"
+                        class="btn btn-light"
+                    >
+                        COMPRAR AHORA
+                    </a>
+
+                    <a
+                        href="https://wa.me/50259824462"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn whatsapp-btn"
+                    >
+                        💬 PEDIR POR WHATSAPP
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORÍAS -->
+
+        <section class="section container" id="categorias">
+
+            <div class="section-heading">
+
+                <span>DESCUBRE</span>
+
+                <h2>
+                    Compra por categoría
+                </h2>
+
+                <p>
+                    Encuentra tu próximo look favorito.
+                </p>
+
+            </div>
+
+            <div class="categories">
+
+                <article class="category-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85"
+                        alt="Moda para mujer"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>
+                            Mujer
+                        </h3>
+
+                        <button
+                            class="category-btn"
+                            data-category="Mujer"
+                        >
+                            VER COLECCIÓN
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1000&q=85"
+                        alt="Moda para hombre"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>
+                            Hombre
+                        </h3>
+
+                        <button
+                            class="category-btn"
+                            data-category="Hombre"
+                        >
+                            VER COLECCIÓN
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85"
+                        alt="Vestidos"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>
+                            Vestidos
+                        </h3>
+
+                        <button
+                            class="category-btn"
+                            data-category="Vestidos"
+                        >
+                            VER COLECCIÓN
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+
+        <section class="section products-section" id="productos">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        DAYANN BOUTIQUE
+                    </span>
+
+                    <h2>
+                        Nuestra colección
+                    </h2>
+
+                    <p>
+                        Moda para mujer y hombre.
+                    </p>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="Todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Mujer"
+                    >
+                        Mujer
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Hombre"
+                    >
+                        Hombre
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Vestidos"
+                    >
+                        Vestidos
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Accesorios"
+                    >
+                        Accesorios
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="products-grid"
+                    id="productsGrid"
+                ></div>
+
+
+                <div
+                    class="no-results"
+                    id="noResults"
+                >
+                    No se encontraron productos.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMO -->
+
+        <section class="promo">
+
+            <div class="promo-overlay"></div>
+
+            <div class="promo-content">
+
+                <span>
+                    DAYANN BOUTIQUE
+                </span>
+
+                <h2>
+                    Tu estilo.<br>
+                    Tu esencia.
+                </h2>
+
+                <p>
+                    Prendas que hacen que cada día se sienta especial.
+                </p>
+
+                <a
+                    href="#productos"
+                    class="btn btn-light"
+                >
+                    DESCUBRIR MÁS
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+
+        <section class="newsletter">
+
+            <div class="container newsletter-content">
+
+                <span>
+                    ÚNETE A DAYANN
+                </span>
+
+                <h2>
+                    Recibe nuestras novedades
+                </h2>
+
+                <p>
+                    Sé la primera en conocer nuevas colecciones y promociones.
+                </p>
+
+                <form id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Tu correo electrónico"
+                        required
+                    >
+
+                    <button type="submit">
+                        SUSCRIBIRME
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contacto">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <h3>
+                    DAYANN <span>BOUTIQUE</span>
+                </h3>
+
+                <p>
+                    Moda, elegancia y estilo para todos.
+                </p>
+
+                <div class="socials">
+
+                    <a
+                        href="https://www.instagram.com/dayann.boutiqigsi=eHFxMGttaDZhOHh1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/share/18zSC2pX9i/?mibextid=wwXIfr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+
+                    <a
+                        href="https://www.tiktok.com/@dayann.boutique?_r=1&_t=ZS-998QRdlgDgq"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h4>TIENDA</h4>
+
+                <a href="#productos">
+                    Colección
+                </a>
+
+                <a href="#categorias">
+                    Categorías
+                </a>
+
+                <a href="#productos">
+                    Novedades
+                </a>
+
+                <a href="#productos">
+                    Ofertas
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>AYUDA</h4>
+
+                <a href="#">
+                    Envíos
+                </a>
+
+                <a href="#">
+                    Cambios
+                </a>
+
+                <a href="#">
+                    Devoluciones
+                </a>
+
+                <a href="#">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>CONTACTO</h4>
+
+                <p>
+                    Guatemala, Guatemala
+                </p>
+
+                <a
+                    href="https://wa.me/50259824462"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp: 5982-4462
+                </a>
+
+                <p>
+                    dayannboutique@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 DAYANN BOUTIQUE —
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- CARRITO -->
+
+    <div class="modal" id="cartModal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                data-close="cartModal"
+            >
+                ×
+            </button>
+
+            <h2>
+                Mi carrito
+            </h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-footer">
+
+                <strong>
+                    Total: Q<span id="cartTotal">0.00</span>
+                </strong>
+
+                <button
+                    class="btn btn-dark"
+                    id="checkoutBtn"
+                >
+                    FINALIZAR COMPRA
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FAVORITOS -->
+
+    <div class="modal" id="favoriteModal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                data-close="favoriteModal"
+            >
+                ×
+            </button>
+
+            <h2>
+                Mis favoritos
+            </h2>
+
+            <div id="favoriteItems"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHECKOUT -->
+
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-box checkout-box">
+
+            <button
+                class="modal-close"
+                data-close="checkoutModal"
+            >
+                ×
+            </button>
+
+            <h2>
+                Finalizar compra
+            </h2>
+
+            <form id="checkoutForm">
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Nombre completo"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Número de teléfono"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="customerAddress"
+                    placeholder="Dirección de entrega"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="customerCity"
+                    placeholder="Departamento / Ciudad"
+                    required
+                >
+
+                <select
+                    id="paymentMethod"
+                    required
+                >
+
+                    <option value="">
+                        Selecciona método de pago
+                    </option>
+
+                    <option value="Contra entrega">
+                        Contra entrega
+                    </option>
+
+                    <option value="Transferencia bancaria">
+                        Transferencia bancaria
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-dark"
+                >
+                    ENVIAR PEDIDO POR WHATSAPP
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTO -->
+
+    <div class="modal" id="productModal">
+
+        <div class="modal-box product-modal-box">
+
+            <button
+                class="modal-close"
+                data-close="productModal"
+            >
+                ×
+            </button>
+
+            <div
+                class="product-detail"
+                id="productDetail"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTIFICACIÓN -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        Producto agregado al carrito.
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
